@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+$primary:    #0A2958;
+$secondary:  #48B1C7;
+$active:     #EE9913;
+
+* {
+    font-family: 'Signika', sans-serif;
+}
+
+.btn-integra {
+    color: #fff;
+    padding: 8px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: .1px solid $primary;
+}
+
+
+.btn-primary-integra {
+    background: $primary;
+    transition: .5s;
+}
+.btn-primary-integra:hover {
+    background: $secondary;
+    color: $primary;
+    border: .1px solid white;
+}
+
+
+.btn-secondary-integra {
+    background: $secondary;
+}
+
+// .content-center {
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: perspective(10px) translateY(-50%) translateX(-50%);
+// }
