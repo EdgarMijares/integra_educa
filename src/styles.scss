@@ -6,6 +6,26 @@ $active:     #EE9913;
 
 * {
     font-family: 'Signika', sans-serif;
+    color: $primary;
+}
+
+.menu {
+    background: $primary;
+    height: 100%;
+}
+
+.logo {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.img-login {
+    width: 80%;
+    padding: 10%;
+}
+
+.bg-secondary-integra {
+    background: $secondary;
 }
 
 .btn-integra {
@@ -18,9 +38,15 @@ $active:     #EE9913;
     width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
-    border: .1px solid $primary;
+    // border: .1px solid $primary;
 }
 
+.title {
+    text-transform: uppercase;
+    color: $primary;
+    padding-left: 5px;
+    border-left: 5px solid $active;
+}
 
 .btn-primary-integra {
     background: $primary;
@@ -32,14 +58,65 @@ $active:     #EE9913;
     border: .1px solid white;
 }
 
-
 .btn-secondary-integra {
     background: $secondary;
+    transition: .5s;
 }
 
+.btn-secondary-integra:hover {
+    background: $primary;
+    color: white;
+    border: .1px solid white;
+}
+
+.btn-administrador {
+    background-color: #fff;
+    color: #525863;
+    border: 1px solid #525863;
+}
+
+.none-padding{
+    padding: 0;
+}
+
+.form-group .form-integra {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: none !important;
+    border-radius: none !important;
+}
+
+.form-group label {
+    color: #fff;
+}
+
+.link-form-ref {
+    font-size: .8rem;
+    padding-left: 5px;
+    color: $primary;
+    &:hover{
+        color: $active;
+        transition: .5s;
+    }
+}
+//
+// form .form-group .form-integra .link-form-ref:hover {
+//     color: $active;
+//     transition: .5s;
+// }
 // .content-center {
 //     position: fixed;
 //     top: 50%;
 //     left: 50%;
 //     transform: perspective(10px) translateY(-50%) translateX(-50%);
 // }
+@media only screen and (max-width: 768px){
+    .menu {
+        display: none;
+    }
+}
