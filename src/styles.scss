@@ -45,6 +45,8 @@ $active:     #EE9913;
     text-transform: uppercase;
     color: $primary;
     padding-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border-left: 5px solid $active;
 }
 
@@ -103,6 +105,11 @@ $active:     #EE9913;
         color: $active;
         transition: .5s;
     }
+}
+
+.jumbotron{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 //
 // form .form-group .form-integra .link-form-ref:hover {
