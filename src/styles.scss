@@ -9,9 +9,18 @@ $active:     #EE9913;
     color: $primary;
 }
 
-.menu {
+.content-menu {
     background: $primary;
-    height: 100%;
+    // height: 100%;
+    width: 70px;
+    height: 100vh;
+    position: fixed;
+    & li {
+        list-style: none;
+    }
+    & li:hover {
+        background: #48B1C7;
+    }
 }
 
 .logo {
